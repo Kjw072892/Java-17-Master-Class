@@ -28,7 +28,10 @@ public class _7_Primitive_Types_Challenge {
 
         short myShort2 = (short) (50000L + 10L * (myByte + myShort + myInt));
         System.out.println(myShort2);
-        // outputs 11864 in the console.
+        // Outputs 11864 in the console.
+        // This is a perfect example of an integer overflow. Since the value is supposed to be 77,400, the integer
+        // overflowed, reverting to -32,768 and continuing on until the value became 11,864
+        // For instance: 77,400 - 32,768 = 44,632 (overflowed again) 44,632 - 32,768 = 11,864 (final result).
 
     }
 }
