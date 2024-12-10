@@ -39,6 +39,7 @@ public class _4_Primitive_Types {
                 - The wrapper class name, for your primitive data type are the same name with the first letter uppercase.
                 - Primitive: byte => Wrapper Class: Byte
                 - Primitive: short => Wrapper Class: Short
+                - Wraps primitive data types into objects so they can be treated as objects.
 
          */
 
