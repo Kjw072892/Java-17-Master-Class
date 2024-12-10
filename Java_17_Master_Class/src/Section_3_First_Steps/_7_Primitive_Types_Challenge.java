@@ -31,7 +31,8 @@ public class _7_Primitive_Types_Challenge {
         // Outputs 11864 in the console.
         // This is a perfect example of an integer overflow. Since the value is supposed to be 77,400, the integer
         // overflowed, reverting to -32,768 and continuing on until the value became 11,864
-        // For instance: 77,400 - 32,768 = 44,632 (overflowed again) 44,632 - 32,768 = 11,864 (final result).
+        // For instance: 77,400 (actual value) - 32,768 (max value for short) = 44,632 (overflowed again)
+        // 44,632 - 32,768 (max value for short) = 11,864 (final result).
 
     }
 }
