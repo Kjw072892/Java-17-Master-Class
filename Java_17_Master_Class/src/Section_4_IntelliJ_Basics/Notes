@@ -1,0 +1,10 @@
+This section has been intentionally left blank due to the course going over the functions of intellij IDEA.
+
+However, this section went over some basic concepts such as the "and" operator and the "or" operator,
+Ternary operator, operator precedence, and operator challenge.
+
+Ternary operator:
+
+operand1 ? operand2 : operand3
+
+where operand1 is a boolean while operand2  and operand3 are x-data type where x encompasses any data type.
