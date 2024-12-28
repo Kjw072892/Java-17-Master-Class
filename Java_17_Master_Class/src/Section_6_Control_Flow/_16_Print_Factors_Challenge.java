@@ -1,6 +1,6 @@
 package Section_6_Control_Flow;
 
-public class _16_Print_Factors {
+public class _16_Print_Factors_Challenge {
     /*
 
         All Factors
