@@ -38,21 +38,43 @@ public class _21_Get_Largest_Prime_Challenge {
 
 
      */
+public static int getLargestPrime(int num) {
 
-    public static int getLargestPrime(int num) {
-
-        if(num < 0){
+        if(num <= 1){
             return -1;
         }
+        int primeFactor = 0;
+        for (int i = 2; i <= num; i++) {
+            if(isPrime(i)) {
+                if (num % i == 0) {
+                    primeFactor = i;
+                }
+            }
+        }
 
+        return primeFactor;
     }
 
     public static boolean isPrime(int num){
-        if(num)
+
+        for(int i = 2; i < num; i++){
+            if(num%i==0){
+                return false;
+            }
+        }
+        return true;
     }
 
+
     public static void main(String[] args) {
-        System.out.println(getLargestPrime(21));
+
+        System.out.println(getLargestPrime(21)); // 7
+        System.out.println(getLargestPrime(217)); // 31
+        System.out.println(getLargestPrime(0)); // -1
+        System.out.println(getLargestPrime(-1)); // -1
+        System.out.println(getLargestPrime(45)); // 5
+        System.out.println(getLargestPrime(7)); // 7
+        System.out.println(getLargestPrime(1));//-1
     }
 
 
