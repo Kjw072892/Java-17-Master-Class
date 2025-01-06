@@ -1,6 +1,6 @@
 package Section_7_OOP_Part_1_Inheritance;
 
-public class _1_2_Car {
+public class Car {
 
     private String make;
     private String model;
